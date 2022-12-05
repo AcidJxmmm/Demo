@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treasure Chest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet"
+</head>
+
+<body>
+    <div class="scene open">
+
+        <div class="object upper">
+            <img class="face front1" src="images/upper-front-1.png">
+            <img class="face front2" src="images/upper-back-3.png">
+            <img class="face front3" src="images/upper-back-2.png">
+            <img class="face front4" src="images/upper-front-4.png">
+            <img class="face front5" src="images/upper-front-5.png">
+            <img class="face front6" src="images/upper-front-6.png">
+            <img class="face back1" src="images/upper-back-1.png">
+            <img class="face back2" src="images/upper-back-2.png">
+            <img class="face back3" src="images/upper-back-3.png">
+            <img class="face back4" src="images/upper-back-4.png">
+            <img class="face back5" src="images/upper-back-5.png">
+            <img class="face back6" src="images/upper-back-6.png">
+            <img class="face left" src="images/upper-right.png">
+            <img class="face right" src="images/upper-right.png">
+            <img class="face top" src="images/upper-top.png">
+            <img class="face bottom" src="images/upper-bottom.png">
+        </div>
+
+        <div class="object lower">
+            <img class="face front" src="images/lower-front.png">
+            <img class="face left" src="images/lower-side.png">
+            <img class="face right" src="images/lower-side.png">
+            <img class="face top" src="images/lower-top.png">
+            <img class="face lower-inner-front" src="images/lower-inner-front.png">
+            <img class="face lower-inner-back" src="images/lower-inner-front.png">
+            <img class="face lower-inner-left" src="images/lower-inner-left.png">
+            <img class="face lower-inner-right" src="images/lower-inner-left.png">
+            <img class="face lower-inner-bottom" src="images/lower-inner-bottom.png">
+        </div>
+
+        <div class="object boat">
+            <img class="face head-left" src="images/boat-side-1.png">
+            <img class="face head-right" src="images/boat-side-1.png">
+            <img class="face bottom" src="images/boat-bottom.png">
+            <img class="face top" src="images/boat-top.png">
+            <img class="face left" src="images/boat-side-2.png">
+            <img class="face right" src="images/boat-side-2.png">
+            <img class="face back" src="images/boat-back.png">
+        </div>
+
+        <canvas class="kid" id="kid" width="600" height="600"></canvas>
+        <canvas class="pirate" id="pirate" width="600" height="600"></canvas>
+        <canvas class="teddy" id="teddy" width="500" height="500"></canvas>
+        <canvas class="treasure" id="treasure" width="600" height="600"></canvas>
+
+        <img src="images/palm-tree.png" class="palm-tree">
+    </div>
+
+    <p id="music">Background Music</p>
+    <p id="mic">Say "Open" or "Close" to control the chest</p>
+
+    <audio id="background-music" src="/audio/background-music.mp3" preload="auto"></audio>
+
+    <label class="toggle volume">
+        <input type="checkbox" class="toggle-checkbox" onclick="togglePlay()">
+        <div class="toggle-btn"></div>
+    </label>
+
+    <img src="images/microphone.png" id="button">
+    <audio src="/audio/beep.mp3" id="beep"></audio>
+    <audio src="/audio/sandy-beach.mp3" id="sandy-beach"></audio>
+        <audio src="/audio/swords.mp3" id="swords"></audio>
+
+    <script src="https://unpkg.com/@rive-app/canvas"></script>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
